@@ -1,0 +1,923 @@
+/* custom styles */
+
+/*adobe font
+
+//styleName: Heading/h3;
+font-family: Spartan;
+font-size: 40px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: -0.4000000059604645px;
+text-align: center;
+
+
+//styleName: Heading/h2;
+font-family: Spartan;
+font-size: 60px;
+font-weight: 700;
+line-height: 88px;
+letter-spacing: -0.699999988079071px;
+text-align: left;
+
+//styleName: Heading/h4;
+font-family: Spartan;
+font-size: 30px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: -0.3499999940395355px;
+text-align: center;
+
+
+//styleName: label en hero and category post
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.30000001192092896px;
+text-align: center;
+
+
+//styleName: Text/Large/Regular;
+font-family: Mulish;
+font-size: 22px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+
+//styleName: Text/Normal/Regular;
+font-family: Mulish;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+
+
+//styleName: cpt articulos cta link
+font-family: Spartan;
+font-size: 16px;
+font-weight: 600;
+line-height: 28px;
+text-align: center;
+
+
+//styleName: Link/Medium Heading post title
+font-family: Mulish;
+font-size: 24px;
+font-weight: 700;
+line-height: 34px;
+text-align: left;
+
+
+//styleName: Text/Extra Small/Regular post date
+font-family: Mulish;
+font-size: 12px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+//styleName: autorname post
+font-family: Mulish;
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+text-align: left;
+
+
+//styleName: about title
+font-family: Mulish;
+font-size: 22px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+
+
+font-family: Spartan;
+font-size: 16px;
+font-weight: 600;
+line-height: 28px;
+text-align: center;
+
+
+font-family: Source Sans Pro;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+
+
+
+colors: 
+
+Invert 				background: #FFFFFF;
+Text/Base 			background: #161B3D;
+Text/Lighten		background: #7B7485;
+Secondary/Base 		background: #00E6CA;
+Third/Base 			background: #F551FF;
+Gray/Darken 		background: #BDBDBD;
+Primary/Base 		background: #2820FC;
+Primary/Lighten 	background: #0069FF;
+Gray/Lighten 		background: #F7F7F7;
+Surface Invert 		background: #FFFFFF1C;
+background: #000000;
+background: #863F38;
+background: #AA534F;
+background: #352836;
+background: #E18980;
+background: #5CAAA6;
+background: #FFAE9E;
+background: #FFFFFF;
+background: #438685;
+
+
+*/
+
+
+/* Estilo general para el container */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Establecer ancho máximo de 1170px en resoluciones mayores */
+@media (min-width: 1171px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+
+/* Estilos de fuentes */
+
+/* Heading h3 */
+h3 {
+    font-family: Spartan, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.4px;
+    text-align: center;
+}
+
+/* Heading h2 */
+h2 {
+    font-family: Spartan, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -0.7px;
+    text-align: left;
+}
+
+/* Heading h4 */
+h4 {
+    font-family: Spartan, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.35px;
+    text-align: center;
+}
+h6 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para resoluciones menores a 768px */
+    h3 {
+        font-size: 2em; /* Reducir tamaño para h3 */
+        line-height: 1.3; /* Ajustar line-height para h3 */
+    }
+
+    h2 {
+        font-size: 3em; /* Reducir tamaño para h2 */
+        line-height: 1.3; /* Ajustar line-height para h2 */
+    }
+
+    h4 {
+        font-size: 1.5em; /* Reducir tamaño para h4 */
+        line-height: 1.3; /* Ajustar line-height para h4 */
+    }
+     h6 {
+        font-size: 1.1rem; /* Disminuir el tamaño en pantallas pequeñas */
+        line-height: 1.5;
+    }
+}
+
+/* Etiqueta en hero and category post */
+.label {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+/* Texto grande regular */
+.large-text {
+    font-family: Mulish, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+/* Texto normal regular */
+.normal-text {
+    font-family: Mulish, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+/* CTA link en CPT Articulos */
+.cpt-cta-link {
+    font-family: Spartan, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+}
+
+/* Enlace medio en título de post */
+.medium-heading-link {
+    font-family: Mulish, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+}
+
+/* Texto extra pequeño regular en fecha de post */
+.extra-small-text {
+    font-family: Mulish, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+/* Nombre de autor en post */
+.author-name {
+    font-family: Mulish, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+/* Título de "Acerca de" */
+.about-title {
+    font-family: Mulish, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+
+
+
+
+/* Estilos para la navegación principal */
+
+/* Estilos generales para la barra del menú */
+.navbar {
+    width: 100%;
+    height: 82px;
+    box-sizing: border-box;
+    /*padding: 0 15px;  Asegura que haya espacio a los lados */
+    z-index: 100; /* Asegura que la barra de navegación esté por debajo de la wpadminbar */
+    position: relative; /* Establece un contexto de apilamiento para el z-index */
+    padding: 0;
+    margin-top: 40px;
+}
+.navbar a.navbar-brand img {
+    margin-top: 5px;
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1170px) {
+    .navbar {
+        max-width: 1170px;
+        margin: 0 auto; /* Centra la barra en pantallas grandes */
+        margin-top: 45px;
+        margin-bottom: 70px;
+    }
+}
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 23px;
+        padding-left: 23px;
+        padding-top: 0px;
+    }
+.navbar-nav .nav-link {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px; /* Aumenta para hacer visible el espacio */
+    text-decoration: none;
+    transition: color 0.35s ease;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: transparent; /* Inicialmente transparente */
+    transition: background-color 0.35s ease, width 0.35s ease;
+    z-index: -1; /* Asegura que la línea esté detrás del texto */
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-item.active .nav-link::before {
+    background-color: #000; /* Color de la línea en hover */
+    width: 100%; /* Ancho de la línea en hover */
+}
+
+
+.navbar-collapse {
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+/* Icono de busqueda */
+.navbar .form-inline {
+    margin-left: auto; /* Empuja el formulario de búsqueda a la derecha */
+}
+
+.navbar .btn {
+    border: none; /* Quita el borde del botón */
+    background: none; /* Quita el fondo del botón */
+}
+
+.navbar .btn i {
+    color: #333; /* Cambia el color del icono */
+    font-size: 1.2em; /* Tamaño del icono */
+}
+
+
+
+
+
+
+
+.hero-label, .category-label {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    top: 0px;
+    left: 0px;
+    background-color: #F551FF; /* Color rosa */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    padding: 6px 10px 6px 10px;
+    color: #fff; /* Color del texto blanco */
+    z-index: 999; /* Asegura que esté sobre el contenido */
+}
+
+/* estilos main hero */
+section.hero-banner {
+    max-width: 1370px;
+    margin: auto;
+}
+@media (min-width: 1371px) {
+    .hero-banner .col-lg-4 {
+        width: 558px;
+        padding: 0;
+        min-width: 558px;
+    }
+
+    .hero-banner .col-lg-8 {
+        width: 812px; /* Ancho deseado para pantallas grandes (992px y superior) */
+        padding: 0; /* Ajusta el padding según sea necesario */
+        -ms-flex: 0 0 auto; /* Ajustamos el flex-basis */
+        flex: 0 0 auto; /* Ajustamos el flex-basis */
+        max-width: 100%; /* Ancho máximo */
+    }
+}
+.hero-content {
+    margin-top: 15px;
+}
+
+.banner-container {
+    max-width: 1370px;
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 16px 15px 0px 15px; /* Espaciado interior */
+}
+
+.hero-heading {
+    font-family: 'Spartan', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -0.7px;
+    text-align: left;
+    margin-top: 56px;
+    margin-bottom: 30px;
+}
+
+.hero-content {
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 30px; /* Espacio inferior entre el contenido */
+}
+@media (max-width: 1199px) {
+	.hero-heading {
+    font-size: 3em;
+    line-height: 1;
+}
+.hero-content {
+    font-size: 1.4em;
+    line-height: 1;
+}
+}
+.img-fluid {
+    max-width: 100%; /* Imagen responsiva que no se extienda más allá de su contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+
+.banner-container img{
+    margin-top: 5px;
+}
+
+
+
+
+/*cpt articles */
+
+section.cpt-articles {
+    margin-top: 118px;
+    margin-bottom: 73px;
+}
+
+
+section.cpt-articles .article-item:first-child {
+    padding-right: 35px;
+}
+section.cpt-articles .article-item:last-child {
+    padding-left: 35px;
+}
+.article-item {
+    text-align: center; /* Centrar el contenido dentro de cada artículo */
+     box-sizing: border-box;
+}
+
+@media (max-width: 1199px) {
+	.article-item {
+	    margin-bottom: 60px;
+	    padding: 0px 15px;
+	}
+}
+.article-item img {
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Ajusta la imagen al ancho máximo del contenedor */
+    margin-bottom: 36px;
+}
+
+.article-item h4{
+     margin-bottom: 28px;
+}
+   
+.button-post {
+    background-color: #2820FC;
+    color: #ffffff;
+    font-family: Spartan, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    display: inline-block;
+    text-decoration: none; /* Para quitar subrayado si es un enlace */
+    margin-top: 13px;
+}
+
+.button-post:hover {
+    background-color: #0069FF; /* Cambia el color de fondo al pasar el mouse si es necesario */
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.custom-posts .post-item {
+    /*margin-bottom: 30px;*/
+    padding: 0px;
+    overflow: hidden; /* Limpiar floats */
+}
+.custom-posts .col-md-6 {
+    padding: 0;
+}
+.custom-posts .col-md-6:nth-child(even) {
+    padding-left: 15px;
+}
+.custom-posts .col-md-6:nth-child(n+3) {
+    padding-top: 30px;
+}
+.custom-posts .articles-list{
+	padding-top: 16px;
+}
+.custom-posts .post-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.custom-posts .post-item .post-image-wrapper {
+    max-width: 250px;
+    float: left;
+    margin-right: 40px; /* Ajustar según necesites */
+    margin-bottom: 20px; /* Ajustar según necesites */
+}
+
+.custom-posts .post-item .post-details {
+    padding: 60px 15px 20px 0px;
+    overflow: hidden; /* Limpiar floats */
+    position: relative;
+}
+.custom-posts .post-item .category-label {
+    top: 15px;
+}
+.custom-posts .post-item .category-label a {
+    color: #fff;
+}
+
+.custom-posts .post-item h4 {
+    font-family: Spartan, sans-serif;
+    font-size: 22px; /* se tuvo que modificar parametro que venia de figma ya que no coincide el renderizado de fuentes */
+    font-weight: 700;
+    line-height: 33px; /* se tuvo que modificar parametro que venia de figma ya que no coincide el renderizado de fuentes */
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.custom-posts .post-item .extra-small-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+
+.custom-posts .post-item .normal-text {
+    font-size: 18px;/* se tuvo que modificar parametro que venia de figma ya que no coincide el renderizado de fuentes */
+    line-height: 28px;/* se tuvo que modificar parametro que venia de figma ya que no coincide el renderizado de fuentes */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.custom-posts .post-item span.post-date {
+    padding-right: 20px;
+}
+.custom-posts .post-item span.post-comments {
+    padding-right: 20px;
+}
+.custom-posts .post-item .author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.custom-posts .post-item .author-info img {
+    width: 30px; /* Ajustar según tu necesidad */
+    height: 30px; /* Ajustar según tu necesidad */
+    border-radius: 50%; /* Ajustar según tu necesidad */
+    /*margin-right: 10px;*/
+}
+
+.custom-posts .post-item .author-info span {
+    margin-top: -15px;
+    margin-left: 2px;
+}
+@media (max-width: 768px) {
+    .custom-posts .post-item .post-image-wrapper {
+        float: none; /* Cancelar float en dispositivos móviles */
+        margin: 0 auto 20px; /* Centrar imagen y ajustar margen */
+        display: block; /* Mostrar imagen como bloque */
+        max-width: 100%; /* Ancho máximo completo en dispositivos móviles */
+    }
+}
+
+
+
+
+
+
+/*section about */
+.about-us {
+    padding: 22px 0;
+}
+
+.about-us .container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.about-us .about-image {
+    max-width: 453px;
+    padding-right: 0;
+    position: relative;
+    padding-left: 0;
+}
+
+.about-us .about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us .about-content {
+    max-width: 770px;
+    padding-left: 0;
+}
+
+.about-us .about-box {
+    background-color: #F7F7F7;
+    padding: 40px;
+    position: absolute;
+    top: 116px;
+    left: -96px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 770px;
+}
+
+@media (max-width: 1199px) {
+    /* Estilos para resoluciones menores de 1200px */
+    .about-us .about-content {
+    max-width: 100%;
+    padding-left: 0;
+}
+
+.about-us .about-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.about-us .about-image {
+    max-width: 100%;
+    padding-right: 0;
+    position: relative;
+    padding-left: 0;
+}
+.about-us .about-image img {
+        display: block;
+        max-width: max-content;
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+}
+
+.about-us .about-box .text-large {
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+}
+
+.about-us .about-box h2 {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    letter-spacing: -0.6px;
+}
+    
+
+
+.about-us .cta-button {
+    display: inline-block;
+    background-color: #00E6CA;
+    color: #fff;
+    text-decoration: none;
+    font-family: Spartan, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 8px 28px;
+}
+
+
+
+
+
+/*newsletter*/
+
+.newsletter {
+    padding: 42px 0;
+    text-align: center;
+}
+
+.newsletter .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.newsletter-content {
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #2820FC;
+    text-align: center;
+}
+
+.newsletter-content h1.frm_heading {
+    color: #fff;
+    font-family: Spartan;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 56px;
+	letter-spacing: -0.4000000059604645px;
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 16px;
+}
+
+.newsletter-content p.frm_description {
+	color: #FFFFFF;
+	font-family: Mulish;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.newsletter .gform_wrapper {
+    margin: 0 auto;
+    text-align: left; /* Ajusta según el estilo deseado */
+}
+
+
+
+.newsletter .gform_button {
+    background-color: #00E6CA; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: Spartan, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.newsletter .gform_button:hover {
+    background-color: #1f1aeb;
+}
+
+.newsletter div#gform_fields_1 {
+    padding-left: 6px;
+}
+
+.newsletter .gform_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .gform_wrapper form {
+    display: flex;
+    gap: 10px; /* Espacio entre el input y el botón */
+}
+
+.newsletter .gform_wrapper input[type="text"],
+.newsletter .gform_wrapper input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter .gform_wrapper input[type="submit"],
+.newsletter .gform_button {
+    background-color: #00E6CA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: Spartan, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.newsletter .gform_wrapper input[type="submit"]:hover,
+.newsletter .gform_button:hover {
+    background-color: #1f1aeb;
+}
+
+.newsletter .ginput_container.ginput_container_email {
+    padding-left: 68px;
+}
+@media (max-width: 650px) {
+    .newsletter .ginput_container.ginput_container_email {
+        padding-left: 0px;
+    }
+}
+
+
+.gform_wrapper.gravity-theme .gform_footer button, .gform_wrapper.gravity-theme .gform_footer input, .gform_wrapper.gravity-theme .gform_page_footer button, .gform_wrapper.gravity-theme .gform_page_footer input {
+    margin-bottom: -17px;
+}
+
+
+
+
+
+footer{
+	border-top: 1px solid #161B3D;
+	padding-top: 60px;
+	margin-top: 29px;
+}
+footer.container{
+	padding: 60px 0px;
+}
+
+footer p.footer-description.normal-text {
+    text-align: left;
+    margin-top: 25px;
+}
+footer .footer-social-networks img {
+    padding-right: 40px;
+}
+footer h6{
+	color: #BDBDBD;
+	margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+    .footer-nav {
+        margin: 21px 0px;
+    }
+}
+footer .footer-nav ul {
+    list-style: none; /* Remover el bullet de las listas */
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-nav  ul li {
+    margin-bottom: 2px; /* Espaciado entre los elementos de la lista */
+}
+
+footer .footer-nav ul li a {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #000; /* Ajusta el color según tu diseño */
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+}
+
+
+
+
+
+
+
+p.footer-copyright {
+    margin-top: 74px;
+}
+
+
+
+
+/*estilos single cpt*/
+section.cpt-article {
+    margin-bottom: 150px;
+}
+header.entry-header {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000;
+}
